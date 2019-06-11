@@ -14,6 +14,16 @@ nav{
   font-family: 'Source Sans Pro', sans-serif;
 } 
 
+nav li {
+  margin: 10px;
+  display:inline;
+}
+
+nav ul {
+  float: left;
+  margin-top: 25px;
+}
+
 h1{
   font-family: 'Roboto', sans-serif;
   color:  #41A3C0; 
@@ -42,9 +52,9 @@ a:hover {
 }
 
 #logo{
-  color: rgb(225, 159, 152);
+  color: #fff;
   font-size: 35px;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', cursive; float: left; margin-left: 50px;
 }
 
 /* Mis en forme de la baseline */
@@ -69,19 +79,21 @@ a:hover {
   text-decoration: none;
 }
 
+#baseline a:hover {
+  position: relative;
+  top:100px;
+}
+
 .feature {border: 1px solid #000;margin: 15px;
 padding: 15px 0;
 text-align: center; background-color: #ECECEC;
 width: 400px;}
 
- #apropos{ border: 1px solid #000;
+ #apropos{ 
+display:flex ; flex-wrap: wrap;justify-content: center;
+  border: 1px solid #000;
   margin: 0 auto;
   width: 80%;
 }
 
 .footer {border: 10px solid #000; text-align: center; font-family: 'Comic Sans MS';}
-
-nav li {
-  margin: 10px;
-  display:inline;
-}
