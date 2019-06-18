@@ -1,4 +1,10 @@
 $( document ).ready(function() {
   alert('Bienvenue à tous');
-  $("p").addClass('red');
+  $("p").on( "click", function() {
+          if ($("p").hasClass('red')){
+          	$("p").removeClass('red');
+          }else{
+          $("p").addClass('red');
+          }
+          })
 });
