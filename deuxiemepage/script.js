@@ -6,5 +6,6 @@ $( document ).ready(function() {
           }else{
           $(this).addClass('red');
           }
-          })
+      $(this).html("HELLOOOO")
+          });
 });
