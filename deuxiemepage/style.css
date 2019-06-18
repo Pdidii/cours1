@@ -1,27 +1,19 @@
-/* style.css */
-
 body{
   background: #fff;
   color: #000; 
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
   margin:0;
-}
-
-nav{
-  display:inline;
-  font-size: 1em;
-  font-family: 'Source Sans Pro', sans-serif;
 } 
-
-nav li {
-  margin: 10px;
-  display:inline;
-}
 
 nav ul {
   float: left;
   margin-top: 25px;
+}
+
+nav li {
+  margin: 10px;
+  display:inline;
 }
 
 h1{
@@ -30,14 +22,12 @@ h1{
   font-weight: bolder;
   font-size: 2em;
 }
-
 h2 {
   font-family: 'Roboto', sans-serif;
   color: #3b4563;
   font-weight: lighter;
   font-size: 1.5em;
 }
-
 p{
   color: #8e9bac;
 }
@@ -52,37 +42,77 @@ a:hover {
 }
 
 #logo{
-  color: #fff;
+  color: #41A3C0;
   font-size: 35px;
-  font-family: 'Pacifico', cursive; float: left; margin-left: 50px;
+  font-family: 'Pacifico', cursive;
+  float: left;
+  margin-left: 50px;
+    color: rgb(225, 0, 152);
+}
+
+.defis #logo{
+  color:white;
 }
 
 /* Mis en forme de la baseline */
 #baseline{
   background-color: #41A3C0;
   text-align: center;
-  background-size: cover;
+  height: 450px;
   padding: 150px;
   color: white;
-  text-shadow: 1px 1px 5px black;
+  background: url(image/stupid-cat.jpg) no-repeat top center fixed; 
+  -webkit-background-size: cover;
+  background-size: cover; 
+  color: #41A3C0;
+  text-shadow: 5px 5px #00;
+
 }
 
 #baseline h1 {
-  color: white;
   font-size: 50px;
+  color: rgb(225, 0, 152);
+}
+
+#baseline h2 {
+  font-size: 30px;
+  color: white;
 }
 
 #baseline a {
-  color: white;
   font-size: 30px;
   font-weight: lighter;
   text-decoration: none;
+  text-decoration: underline;
 }
 
 #baseline a:hover {
   position: relative;
-  top:100px;
+  top:1px;
 }
+
+/* Centrage de la section a propos */
+#apropos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1000px;
+
+}
+
+/* Mise en forme de la div de feature */
+
+.feature,.defi{
+  border: 1px solid #F2F2F2;
+  background: #FAFAFA;
+  margin: 15px;
+  padding: 15px 0;
+  text-align: center;
+  width: 400px;
+}
+
 
 #welcome{
   background-color: #41A3C0;
@@ -95,22 +125,33 @@ a:hover {
  font-size: 50px;
 }
 
-.feature,.defi {border: 1px solid #F2F2F2;
-  background: #FAFAFA;
-  margin: 15px;
-  padding: 15px 0;
-  text-align: center;
-  width: 400px;}
-
- #apropos{ 
-display:flex ; flex-wrap: wrap;justify-content: center;
-  border: 1px solid #000;
-  margin: 0 auto;
+#defis{
+  margin-top:100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 80%;
-}
-.red{
-  color:red;
-  font-size:15px;
-  }
+  margin: 0 auto;
+  max-width: 1000px;
 
-.footer {border: 10px solid #000; text-align: center; font-family: 'Comic Sans MS';}
+}
+
+
+#defis h2 {
+  color: rgb(225, 0, 152);
+
+}
+
+
+footer {
+  text-align:center;
+  background-color: #41A3C0;
+}
+
+
+
+footer p {
+   color: white;
+   margin: 0;
+   padding: 0;
+}
