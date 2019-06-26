@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  alert('Bienvenue à tous');
+  alert('Bienvenue à vous tous');
   $("p").on( "click", function() {
           if ($(this).hasClass('red')){
           	$(this).removeClass('red');
